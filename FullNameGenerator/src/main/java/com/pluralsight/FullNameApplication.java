@@ -25,5 +25,7 @@ public class FullNameApplication {
         }
 
         System.out.printf("Full name: %s %s %s %s", userName, userMiddleName, userLastName, userSuffix);
+
+        input.close();
     }
 }
