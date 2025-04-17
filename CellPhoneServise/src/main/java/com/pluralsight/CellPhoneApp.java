@@ -35,11 +35,17 @@ public class CellPhoneApp {
         String phoneOwner = input.nextLine();
         newPhone.setOwner(phoneOwner);
 
+        display(newPhone);
+
+        newPhone.dial(newPhone.getPhoneNumber());
+    }
+
+    public static void display(CellPhone phone) {
         System.out.println("\nPhone Info:");
-        System.out.println("Serial number: " + newPhone.getSerialNumber());
-        System.out.println("Model: " + newPhone.getModel());
-        System.out.println("Carrier: " + newPhone.getCarrier());
-        System.out.println("Phone Number: " + newPhone.getPhoneNumber());
-        System.out.println("Owner: " + newPhone.getOwner());
+        System.out.println("Serial number: " + phone.getSerialNumber());
+        System.out.println("Model: " + phone.getModel());
+        System.out.println("Carrier: " + phone.getCarrier());
+        System.out.println("Phone Number: " + phone.getPhoneNumber());
+        System.out.println("Owner: " + phone.getOwner());
     }
 }
